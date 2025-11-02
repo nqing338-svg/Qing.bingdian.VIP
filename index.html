@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人介绍</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .profile-card {
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        
+        .profile-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .profile-header {
+            background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+            padding: 40px 20px 30px;
+            text-align: center;
+        }
+        
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid white;
+            object-fit: cover;
+            margin: 0 auto 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .name {
+            font-size: 24px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        
+        .title {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        
+        .profile-content {
+            padding: 30px;
+        }
+        
+        .section {
+            margin-bottom: 25px;
+        }
+        
+        .section-title {
+            font-size: 18px;
+            color: #444;
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #eaeaea;
+        }
+        
+        .bio {
+            line-height: 1.6;
+            color: #666;
+            text-align: justify;
+        }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .skill-tag {
+            background-color: #eef5ff;
+            color: #4a6ee0;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+        
+        .contact-list {
+            list-style: none;
+        }
+        
+        .contact-list li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            color: #666;
+        }
+        
+        .contact-list i {
+            margin-right: 10px;
+            color: #4a6ee0;
+            width: 20px;
+            text-align: center;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-link {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #f0f4ff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #4a6ee0;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .social-link:hover {
+            background-color: #4a6ee0;
+            color: white;
+            transform: scale(1.1);
+        }
+        
+        @media (max-width: 480px) {
+            .profile-card {
+                max-width: 100%;
+            }
+            
+            .profile-content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <div class="profile-header">
+            <img src="mmexport1754134112937.jpeg" alt="头像" class="avatar">
+            <h1 class="name">晴</h1>
+            <p class="title">冰点俱乐部董事长</p>
+        </div>
+        
+        <div class="profile-content">
+            <div class="section">
+                <h2 class="section-title">关于我</h2>
+                <p class="bio">
+                    我是一名充满热情的前端开发工程师，拥有5年Web开发经验。
+                    擅长使用HTML、CSS、JavaScript和React构建现代化、响应式的Web应用。
+                    我热爱学习新技术，享受解决复杂问题的过程，并始终致力于提供最佳用户体验。
+                </p>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">技能专长</h2>
+                <div class="skills">
+                    <span class="skill-tag">HTML/CSS</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">Vue.js</span>
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">UI/UX设计</span>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">联系方式</h2>
+                <ul class="contact-list">
+                    <li><i>📧</i> zhangxiaoming@example.com</li>
+                    <li><i>📱</i> +86 138 0000 0000</li>
+                    <li><i>📍</i> 北京市朝阳区</li>
+                </ul>
+            </div>
+            
+            <div class="social-links">
+                <a href="#" class="social-link">Git</a>
+                <a href="#" class="social-link">微</a>
+                <a href="#" class="social-link">知</a>
+                <a href="#" class="social-link">领</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html><!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人介绍</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .profile-card {
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        
+        .profile-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .profile-header {
+            background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+            padding: 40px 20px 30px;
+            text-align: center;
+        }
+        
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid white;
+            object-fit: cover;
+            margin: 0 auto 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .name {
+            font-size: 24px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        
+        .title {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        
+        .profile-content {
+            padding: 30px;
+        }
+        
+        .section {
+            margin-bottom: 25px;
+        }
+        
+        .section-title {
+            font-size: 18px;
+            color: #444;
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #eaeaea;
+        }
+        
+        .bio {
+            line-height: 1.6;
+            color: #666;
+            text-align: justify;
+        }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .skill-tag {
+            background-color: #eef5ff;
+            color: #4a6ee0;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+        
+        .contact-list {
+            list-style: none;
+        }
+        
+        .contact-list li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            color: #666;
+        }
+        
+        .contact-list i {
+            margin-right: 10px;
+            color: #4a6ee0;
+            width: 20px;
+            text-align: center;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-link {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #f0f4ff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #4a6ee0;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .social-link:hover {
+            background-color: #4a6ee0;
+            color: white;
+            transform: scale(1.1);
+        }
+        
+        @media (max-width: 480px) {
+            .profile-card {
+                max-width: 100%;
+            }
+            
+            .profile-content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <div class="profile-header">
+            <img src="mmexport1754134112937.jpeg" alt="头像" class="avatar">
+            <h1 class="name">张小明</h1>
+            <p class="title">前端开发工程师</p>
+        </div>
+        
+        <div class="profile-content">
+            <div class="section">
+                <h2 class="section-title">关于我</h2>
+                <p class="bio">
+                    我是一名充满热情的前端开发工程师，拥有5年Web开发经验。
+                    擅长使用HTML、CSS、JavaScript和React构建现代化、响应式的Web应用。
+                    我热爱学习新技术，享受解决复杂问题的过程，并始终致力于提供最佳用户体验。
+                </p>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">技能专长</h2>
+                <div class="skills">
+                    <span class="skill-tag">HTML/CSS</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">Vue.js</span>
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">UI/UX设计</span>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">联系方式</h2>
+                <ul class="contact-list">
+                    <li><i>📧</i> zhangxiaoming@example.com</li>
+                    <li><i>📱</i> +86 138 0000 0000</li>
+                    <li><i>📍</i> 北京市朝阳区</li>
+                </ul>
+            </div>
+            
+            <div class="social-links">
+                <a href="#" class="social-link">Git</a>
+                <a href="#" class="social-link">微</a>
+                <a href="#" class="social-link">知</a>
+                <a href="#" class="social-link">领</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
